@@ -1,0 +1,8 @@
+C:\Users\Asus\source\repos\xmlMicroservice\xmlMicroservice.DAL\bin\Debug\netcoreapp2.2\xmlMicroservice.DAL.deps.json
+C:\Users\Asus\source\repos\xmlMicroservice\xmlMicroservice.DAL\bin\Debug\netcoreapp2.2\xmlMicroservice.DAL.dll
+C:\Users\Asus\source\repos\xmlMicroservice\xmlMicroservice.DAL\bin\Debug\netcoreapp2.2\xmlMicroservice.DAL.pdb
+C:\Users\Asus\source\repos\xmlMicroservice\xmlMicroservice.DAL\obj\Debug\netcoreapp2.2\xmlMicroservice.DAL.AssemblyInfoInputs.cache
+C:\Users\Asus\source\repos\xmlMicroservice\xmlMicroservice.DAL\obj\Debug\netcoreapp2.2\xmlMicroservice.DAL.AssemblyInfo.cs
+C:\Users\Asus\source\repos\xmlMicroservice\xmlMicroservice.DAL\obj\Debug\netcoreapp2.2\xmlMicroservice.DAL.dll
+C:\Users\Asus\source\repos\xmlMicroservice\xmlMicroservice.DAL\obj\Debug\netcoreapp2.2\xmlMicroservice.DAL.pdb
+C:\Users\Asus\source\repos\xmlMicroservice\xmlMicroservice.DAL\obj\Debug\netcoreapp2.2\xmlMicroservice.DAL.csprojAssemblyReference.cache

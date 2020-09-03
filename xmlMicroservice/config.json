@@ -1,0 +1,10 @@
+{
+  "ConnectionStrings": {
+    "ConnectionString": "Server=172.22.0.2; User Id=sa;Password=De_199291;Database=RentACarMicroservice;"
+  },
+  "Tokens": {
+    "Key": "dawd;awd9 a192 1212;1;",
+    "Issuer": "http://localhost:64419",
+    "Audience": "users"
+  }
+}

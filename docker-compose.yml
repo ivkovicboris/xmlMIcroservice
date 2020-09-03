@@ -1,0 +1,60 @@
+version: '3.4'
+
+services:  
+  xmlmicroservice:  
+    links:  
+      - sqlserverService  
+    image: ${DOCKER_REGISTRY-}xmlmicroservice  
+    build:  
+      context: .  
+      dockerfile: xmlMicroservice/Dockerfile 
+    ports:
+      - "44359:443"
+      - "52086:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=de199291
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/backend.pfx
+    volumes:
+      - ~/.aspnet/https:/https:ro
+  
+  sqlserverService:  
+    image: microsoft/mssql-server-linux:2017-latest  
+    hostname: 'sqlserver'  
+    environment:  
+      ACCEPT_EULA: Y  
+      SA_PASSWORD: "De_199291"  
+    volumes:  
+      - ./data/mssql:/var/opt/mssql3  
+    ports:  
+      - '1433:1433'  
+    expose:  
+      - 1433  
+
+
+
+  xmlmicroservicecar:
+    image: ${DOCKER_REGISTRY-}xmlmicroservicecar
+    build:
+      context: .
+      dockerfile: ../xmlMicroserviceCar/Dockerfile
+    ports:
+      - "63811:80"
+
+  xmlmicroserviceapigateway:
+    image: ${DOCKER_REGISTRY-}xmlmicroserviceapigateway
+    build:
+      context: .
+      dockerfile: ../xmlMicroserviceApiGateway/Dockerfile
+    ports:
+      - "58794:80"
+
+  xmlmicroservicead:
+    image: ${DOCKER_REGISTRY-}xmlmicroservicead
+    build:
+      context: .
+      dockerfile: ../xmlMicroserviceAd/Dockerfile
+    ports:
+      - "58638:80"
+
